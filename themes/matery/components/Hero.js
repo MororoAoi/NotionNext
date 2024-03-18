@@ -66,8 +66,7 @@ const Hero = props => {
                 </div>
             </div>
 
-            <LazyImage priority={false} id='header-cover'src={“https://static.simpledesktops.com/uploads/desktops/2012/08/29/crane2_copy.png
-”}
+            <LazyImage priority={false} id='header-cover'src={siteInfo?.pageCover}
                 className={`header-cover object-center w-full h-screen object-cover ${siteConfig('MATERY_HOME_NAV_BACKGROUND_IMG_FIXED', null, CONFIG) ? 'fixed' : ''}`} />
 
         </header>
