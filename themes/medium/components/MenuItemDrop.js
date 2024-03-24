@@ -18,7 +18,7 @@ export const MenuItemDrop = ({ link }) => {
 
         {hasSubMenu &&
             <div className={'px-3 h-full whitespace-nowrap duration-300 text-sm justify-between dark:text-gray-300 cursor-pointer flex flex-nowrap items-center ' +
-                (selected ? 'bg-green-600 text-white hover:text-white' : 'hover:text-green-600')}>
+                (selected ? 'bg-rose-300 text-white hover:text-white' : 'hover:text-rose-300')}>
                 <div>
                     {link?.icon && <i className={link?.icon} />} {link?.name}
                     {hasSubMenu && <i className={`px-2 fas fa-chevron-down duration-500 transition-all ${show ? ' rotate-180' : ''}`}></i>}
@@ -28,7 +28,7 @@ export const MenuItemDrop = ({ link }) => {
 
         {!hasSubMenu &&
             <div className={'px-3 h-full whitespace-nowrap duration-300 text-sm justify-between dark:text-gray-300 cursor-pointer flex flex-nowrap items-center ' +
-                (selected ? 'bg-green-600 text-white hover:text-white' : 'hover:text-green-600')}>
+                (selected ? 'bg-rose-300 text-white hover:text-white' : 'hover:text-rose-300')}>
                 <Link href={link?.to} target={link?.to?.indexOf('http') === 0 ? '_blank' : '_self'}>
                     {link?.icon && <i className={link?.icon} />} {link?.name}
                 </Link>
