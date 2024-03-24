@@ -32,7 +32,7 @@ export const MenuItemCollapse = (props) => {
   }
 
   return <>
-        <div className={ (selected ? 'bg-green-600 text-white hover:text-white' : 'hover:text-green-600') + ' px-5 w-full text-left duration-200 dark:bg-hexo-black-gray dark:border-black'} onClick={toggleShow} >
+        <div className={ (selected ? 'bg-rose-300 text-white hover:text-white' : 'hover:text-rose-300') + ' px-5 w-full text-left duration-200 dark:bg-hexo-black-gray dark:border-black'} onClick={toggleShow} >
 
             {!hasSubMenu && <Link href={link?.to} target={link?.to?.indexOf('http') === 0 ? '_blank' : '_self'} className='py-2 w-full my-auto items-center justify-between flex  '>
                 <div><div className={`${link.icon} text-center w-4 mr-4`} />{link.name}</div>
