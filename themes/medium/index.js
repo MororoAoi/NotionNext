@@ -282,7 +282,7 @@ const LayoutMemos = (props) => {
   const memoPageInfo = {
     id: "125fe5e1704d4d7a9615661925d3e66a", // 因为引入了评论互动，所以需要一个ID来对应加载页面评论，这里使用Notion这个菜单的pageID
     type: "Memos",
-    title: "碎碎念"
+    title: "说说"
   };
   return  (   
 	{/* 这里不是hexo主题的话，return部分不要照搬，最好参考index.js 文章详情 LayoutSlug的模块移植 */}
