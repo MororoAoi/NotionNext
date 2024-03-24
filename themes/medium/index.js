@@ -34,6 +34,7 @@ import { Style } from './style'
 import replaceSearchResult from '@/components/Mark'
 import ArticleInfo from './components/ArticleInfo'
 import { siteConfig } from '@/lib/config'
+import BlogMemos from './components/BlogMemos'
 
 // 主题全局状态
 const ThemeGlobalMedium = createContext()
@@ -53,7 +54,7 @@ const LayoutBase = props => {
   const { onLoading, fullWidth } = useGlobal()
 
   const slotTop = <BlogPostBar {...props} />
-
+    
   return (
         <ThemeGlobalMedium.Provider value={{ tocVisible, changeTocVisible }}>
             {/* CSS样式 */}
@@ -271,6 +272,39 @@ const LayoutArchive = props => {
   )
 }
 
+
+/**
+ * 说说
+ * @param {*} props
+ * @returns
+ */
+const LayoutMemos = (props) => {
+  const memoPageInfo = {
+    id: "125fe5e1704d4d7a9615661925d3e66a", // 因为引入了评论互动，所以需要一个ID来对应加载页面评论，这里使用Notion这个菜单的pageID
+    type: "Memos",
+    title: "碎碎念",
+  };
+  return  (   
+	{/* 这里不是hexo主题的话，return部分不要照搬，最好参考index.js 文章详情 LayoutSlug的模块移植 */}
+  <div className="w-full lg:hover:shadow rounded-md lg:rounded-md lg:px-2 lg:py-4 article">
+		{/* 去掉加密的Lock部分判断 */}
+    <div id="article-wrapper" className="overflow-x-auto flex-grow mx-auto md:w-full px-3 font-serif">  
+      <article itemScope itemType="https://schema.org/Movie" className="subpixel-antialiased overflow-y-hidden overflow-x-hidden" >
+        {/* Notion文章主体 */}
+        <section className='justify-center mx-auto max-w-2xl lg:max-w-full'>
+            <BlogMemos {...props}/>
+        </section>
+      </article>
+			{/* 移除了分享模块，如果需要可以保留，将 LayoutSlug的对应部分拷贝过来 */}
+      <div className='pt-4 border-dashed'></div>
+      {/* 评论互动 */}
+      <div className="duration-200 overflow-x-auto px-3">
+        <Comment frontMatter={memoPageInfo} />
+      </div>
+    </div>
+  </div>)
+}
+
 /**
  * 404
  * @param {*} props
@@ -353,6 +387,7 @@ export {
   LayoutPostList,
   LayoutSearch,
   LayoutArchive,
+  LayoutMemos,
   LayoutSlug,
   Layout404,
   LayoutCategoryIndex,
