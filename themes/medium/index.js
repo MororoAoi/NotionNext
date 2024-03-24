@@ -101,7 +101,7 @@ const LayoutBase = props => {
                             <div className='py-14 px-6 sticky top-0'>
                                 <Tabs>
                                     {slotRight}
-                                    <div key={locale.NAV.ABOUT}>
+                                   
                                         {router.pathname !== '/search' && <SearchInput className='mt-6  mb-12' />}
                                         {showInfoCard && <InfoCard {...props} />}
                                         {siteConfig('MEDIUM_WIDGET_REVOLVER_MAPS', null, CONFIG) === 'true' && <RevolverMaps />}
