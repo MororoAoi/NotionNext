@@ -44,7 +44,7 @@ const BlogMemos = () => {
 						{/* 可以按需修改这里显示的标题和统计文本 */}
             <h2>瞬间</h2>
 	    <p>对焦，她的爱，对慢了爱人会失去可爱。</p>
-            <div className="total">一共 <span id="total">0</span> 条瞬间 💭</div>
+            <div className="total">一共 <span id="total">0</span> 个瞬间 💭</div>
             <blockquote id="tag-filter" className="filter">
                 <div id="tags"></div>
             </blockquote>
