@@ -29,7 +29,7 @@ const BlogPostCard = ({ post, showSummary }) => {
                     href={url}
                     passHref
                     className={
-                        'cursor-pointer font-bold  hover:underline text-2xl leading-tight text-gray-700 dark:text-gray-300 hover:text-rose-300 dark:hover:text-rose-300'
+                        'cursor-pointer font-bold  hover:underline text-1xl leading-tight text-gray-700 dark:text-gray-300 hover:text-rose-300 dark:hover:text-rose-300'
                     }>
                     <h3>
                         {siteConfig('MEDIUM_POST_LIST_COVER', null, CONFIG) && <div className='w-full max-h-96 object-cover overflow-hidden mb-2'>
