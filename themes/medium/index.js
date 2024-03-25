@@ -297,9 +297,7 @@ const LayoutMemos = (props) => {
       </article>
 			
       <div class='pt-4 border-dashed'></div>
-      <div className="duration-200 overflow-x-auto px-3">
-        <Comment frontMatter={memoPageInfo} />
-      </div>
+      
     </div>
   </div>
  );
