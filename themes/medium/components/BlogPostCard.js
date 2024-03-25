@@ -21,7 +21,7 @@ const BlogPostCard = ({ post, showSummary }) => {
             data-aos-duration="300"
             data-aos-once="false"
             data-aos-anchor-placement="top-bottom"
-            className="mb-6 max-w-7xl border-b dark:border-gray-800 "
+            className="mb-4 max-w-7xl border-b dark:border-gray-800 "
         >
 
             <header className="lg:py-8 py-4 flex flex-col w-full">
