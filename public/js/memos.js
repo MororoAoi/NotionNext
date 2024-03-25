@@ -47,12 +47,12 @@
 
 // Memos Start
 var memo = {
-    host: 'https://memos.chenge.ink',
-    limit: '10',
+    host: 'https://memos.bearxiong.xyz/',
+    limit: '15',
     creatorId: '1',
     domId: '#memos',
-    username: '陈源泉',
-    name: '尘歌'
+    username: '瞬间',
+    name: 'Aoi'
 }
 if (typeof (memos) !== "undefined") {
     for (var key in memos) {
