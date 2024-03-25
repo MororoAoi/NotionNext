@@ -29,14 +29,14 @@ const BlogPostCard = ({ post, showSummary }) => {
                     href={url}
                     passHref
                     className={
-                        'cursor-pointer font-bold  hover:underline text-3xl leading-tight text-gray-700 dark:text-gray-300 hover:text-green-500 dark:hover:text-green-400'
+                        'cursor-pointer font-bold  hover:underline text-2xl leading-tight text-gray-700 dark:text-gray-300 hover:text-rose-300 dark:hover:text-rose-300'
                     }>
-                    <h2>
+                    <h3>
                         {siteConfig('MEDIUM_POST_LIST_COVER', null, CONFIG) && <div className='w-full max-h-96 object-cover overflow-hidden mb-2'>
                             <LazyImage src={post.pageCoverThumbnail} style={post.pageCoverThumbnail ? {} : { height: '0px' }} className='w-full max-h-96 object-cover hover:scale-125 duration-150' />
                         </div>}
                         <NotionIcon icon={post.pageIcon} />{post.title}
-                    </h2>
+                    </h3>
 
                 </Link>
 
@@ -67,7 +67,7 @@ const BlogPostCard = ({ post, showSummary }) => {
                                 <Link
                                     href={url}
                                     passHref
-                                    className="hover:bg-opacity-100 hover:scale-105 duration-200 pointer-events-auto transform font-bold text-green-500 cursor-pointer">
+                                    className="hover:bg-opacity-100 hover:scale-105 duration-200 pointer-events-auto transform font-bold text-rose-300 cursor-pointer">
 
                                     {locale.COMMON.ARTICLE_DETAIL}
                                     <i className="ml-1 fas fa-angle-right" />
