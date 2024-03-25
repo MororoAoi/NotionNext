@@ -51,8 +51,8 @@ var memo = {
     limit: '15',
     creatorId: '1',
     domId: '#memos',
-    username: 'Aoi',
-    name: 'Aoi的生活碎片'
+    username: 'Aoi的生活碎片',
+    name: 'Aoi'
 }
 if (typeof (memos) !== "undefined") {
     for (var key in memos) {
