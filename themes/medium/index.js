@@ -282,7 +282,7 @@ const LayoutMemos = (props) => {
   const memoPageInfo = {
     id: "125fe5e1704d4d7a9615661925d3e66a", // 因为引入了评论互动，所以需要一个ID来对应加载页面评论，这里使用Notion这个菜单的pageID
     type: "Memos",
-    title: "说说"
+    title: "瞬间"
   };
 	
   return  (   	
