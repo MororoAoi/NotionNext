@@ -24,7 +24,7 @@ const BlogPostCard = ({ post, showSummary }) => {
             className="mb-3 max-w-7xl border-b dark:border-gray-800 "
         >
 
-            <header className="lg:py-8 py-4 flex flex-col w-full">
+            <header className="lg:py-4 py-2 flex flex-col w-full">
                 <Link
                     href={url}
                     passHref
@@ -54,7 +54,7 @@ const BlogPostCard = ({ post, showSummary }) => {
                 <div className="flex"></div>
 
                 {(!showPreview || showSummary) && (
-                    <main className="my-4 text-gray-700 dark:text-gray-300 text-sm font-light leading-7">
+                    <main className="my-2 text-gray-700 dark:text-gray-300 text-sm font-light leading-7">
                         {post.summary}
                     </main>
                 )}
