@@ -16,7 +16,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
 
   return (
 
-        <div className={`${siteConfig('HEXO_POST_LIST_COVER_HOVER_ENLARGE', null, CONFIG) ? ' hover:scale-110 transition-all duration-150' : ''}`} >
+        <div className={`${siteConfig('HEXO_POST_LIST_COVER_HOVER_ENLARGE', null, CONFIG) ? 'transition-all duration-150' : ''}`} >
             <div key={post.id}
                 data-aos="fade-up"
                 data-aos-easing="ease-in-out"
