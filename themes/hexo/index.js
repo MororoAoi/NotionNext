@@ -312,33 +312,32 @@ const Layout404 = props => {
   )
 }
 
-/**
- * 分类列表
+* 分类列表
  * @param {*} props
  * @returns
  */
 const LayoutCategoryIndex = props => {
   const { categoryOptions } = props
-  const { locale } = useGlobal()
+
   return (
-        <div className='mt-8'>
-            <Card className="w-full min-h-screen">
-                <div className="dark:text-gray-200 mb-5 mx-3">
-                    <i className="mr-4 fas fa-th" />  {locale.COMMON.CATEGORY}:
+        <>
+
+            <div id='inner-wrapper' className='w-full'>
+                <div className="drop-shadow-xl -mt-32 rounded-md mx-3 px-5 lg:border lg:rounded-xl lg:px-2 lg:py-4 bg-white dark:bg-hexo-black-gray  dark:border-black dark:text-gray-300">
+                    <div className='flex justify-center flex-wrap'>
+                        {categoryOptions?.map(e => {
+                          return (
+                                <Link key={e.name} href={`/category/${e.name}`} passHref legacyBehavior>
+                                    <div className='duration-300 text-md whitespace-nowrap dark:hover:text-white px-5 cursor-pointer py-2 hover:text-indigo-400' >
+                                        <i className={'mr-4 fas fa-folder'} />  {e.name}({e.count})
+                                    </div>
+                                </Link>
+                          )
+                        })}
+                    </div>
                 </div>
-                <div id="category-list" className="duration-200 flex flex-wrap mx-8">
-                    {categoryOptions?.map(category => {
-                      return (
-                            <Link key={category.name} href={`/category/${category.name}`} passHref legacyBehavior>
-                                <div className={' duration-300 dark:hover:text-white px-5 cursor-pointer py-2 hover:text-indigo-400'}>
-                                    <i className="mr-4 fas fa-folder" />  {category.name}({category.count})
-                                </div>
-                            </Link>
-                      )
-                    })}
-                </div>
-            </Card>
-        </div>
+            </div>
+        </>
   )
 }
 
