@@ -17,7 +17,7 @@ const Style = () => {
     /*  菜单下划线动画 */
     #theme-hexo .menu-link {
         text-decoration: none;
-        background-image: linear-gradient(#928CEE, #928CEE);
+        background-image: linear-gradient(#FB923C, #FB923C);
         background-repeat: no-repeat;
         background-position: bottom center;
         background-size: 0 2px;
