@@ -286,7 +286,7 @@ const LayoutMemos = (props) => {
   };
 	
   return  (   	
-  <div className="w-full lg:hover:shadow rounded-md lg:rounded-md lg:px-1 lg:py-4 article">
+  <div className="w-full lg:hover:shadow rounded-md lg:rounded-md lg:px-2 px-1 lg:py-4 article">
 		
     <div id="article-wrapper" className="overflow-x-auto flex-grow mx-auto md:w-full px-1 font-serif">  
       <article itemScope itemType="https://schema.org/Movie" className="subpixel-antialiased overflow-y-hidden overflow-x-hidden" >
