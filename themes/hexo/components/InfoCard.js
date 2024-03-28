@@ -14,7 +14,7 @@ export function InfoCard(props) {
   const { className, siteInfo } = props
   const router = useRouter()
   return (
-        <Card className={`mx-auto ${className} sm:mx-4`}>
+        <Card className={className}>
             <div
                 className='justify-center items-center flex py-6 dark:text-gray-100  transform duration-200 cursor-pointer'
                 onClick={() => {
