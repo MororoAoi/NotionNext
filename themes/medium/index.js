@@ -60,7 +60,7 @@ const LayoutBase = props => {
             {/* CSS样式 */}
             <Style />
 
-            <div id='theme-medium' className={`${siteConfig('FONT_STYLE')} bg-white dark:bg-hexo-black-gray w-full h-full min-h-screen justify-center dark:text-gray-300 scroll-smooth`}>
+            <div id='theme-medium' className={`${siteConfig('FONT_STYLE')} bg-transparent dark:bg-hexo-black-gray w-full h-full min-h-screen justify-center dark:text-gray-300 scroll-smooth`}>
 {/* 顶部导航栏 */}
                         <TopNavBar {...props} />
                 <main id='wrapper' className={(JSON.parse(siteConfig('LAYOUT_SIDEBAR_REVERSE')) ? 'flex-row-reverse' : '') + 'relative flex justify-between w-full h-full mx-auto'}>
