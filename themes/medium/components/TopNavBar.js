@@ -46,13 +46,13 @@ export default function TopNavBar(props) {
 
             {/* 移动端折叠菜单 */}
             <Collapse type='vertical' collapseRef={collapseRef} isOpen={isOpen} className='md:hidden'>
-                <div className='bg-white dark:bg-hexo-black-gray pt-1 py-2 lg:hidden '>
+                <div className='bg-white bg-opacity-50 dark:bg-hexo-black-gray pt-1 py-2 lg:hidden '>
                     <MenuBarMobile {...props} onHeightChange={(param) => collapseRef.current?.updateCollapseHeight(param)} />
                 </div>
             </Collapse>
 
             {/* 导航栏菜单 */}
-            <div className='flex w-full h-12 shadow bg-white dark:bg-hexo-black-gray px-7 items-between'>
+            <div className='flex w-full h-12 shadow bg-transparent dark:bg-transparent px-7 items-between'>
 
                 {/* 左侧图标Logo */}
                 <LogoBar {...props} />
