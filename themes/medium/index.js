@@ -99,7 +99,7 @@ const LayoutBase = props => {
                     {fullWidth
                       ? null
                       : <div className={`hidden xl:block dark:border-transparent w-96 relative z-10 ${siteConfig('MEDIUM_RIGHT_PANEL_DARK', null, CONFIG) ? 'bg-hexo-black-gray dark' : ''}`}>
-                            <div className='py-10 px-6 sticky top-0'>
+                            <div className='py-8 px-6 sticky top-0'>
                                 <Tabs>
                                     {slotRight}
                                     <div>
