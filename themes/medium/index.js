@@ -61,8 +61,7 @@ const LayoutBase = props => {
             <Style />
 
             <div id='theme-medium' className={`${siteConfig('FONT_STYLE')} bg-transparent dark:bg-hexo-black-gray w-full h-full min-h-screen justify-center dark:text-gray-300 scroll-smooth`}>
-{/* 顶部导航栏 */}
-                        <TopNavBar {...props} />
+
                 <main id='wrapper' className={(JSON.parse(siteConfig('LAYOUT_SIDEBAR_REVERSE')) ? 'flex-row-reverse' : '') + 'relative flex justify-between w-full h-full mx-auto'}>
                     {/* 桌面端左侧菜单 */}
                     {/* <LeftMenuBar/> */}
@@ -70,7 +69,8 @@ const LayoutBase = props => {
                     {/* 主区 */}
                     <div id='container-wrapper' className='w-full relative z-10'>
 
-                        
+                        {/* 顶部导航栏 */}
+                        <TopNavBar {...props} />
 
                         <div id='container-inner' className={`px-14 ${fullWidth ? '' : 'max-w-5xl'} justify-center mx-auto min-h-screen`}>
                             <Transition
