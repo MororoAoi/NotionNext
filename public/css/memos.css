@@ -180,7 +180,7 @@ h2 {
     width: 100%;
 }
 
-.memos__content:before {
+/*.memos__content:before {
     content: '';
     position: absolute;
     background: url('/images/avatar.jpg') no-repeat;
@@ -192,7 +192,7 @@ h2 {
     top: 10px;
     border: 0;
     object-fit: cover;
-}
+}*/
 
 .memos__text {
     position: relative;
@@ -209,14 +209,14 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-/* .timeline:hover .memos__text:before {
+.timeline:hover .memos__text:before {
     background: var(--color-text-hover);
     z-index: 1;
 }
 
 .timeline:hover .memos__text {
     background: var(--color-text-hover);
-} */
+} 
 
 .memos__text {
     width: 100%;
