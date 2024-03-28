@@ -46,7 +46,7 @@ export default function TopNavBar(props) {
 
             {/* 移动端折叠菜单 */}
             <Collapse type='vertical' collapseRef={collapseRef} isOpen={isOpen} className='md:hidden'>
-                <div className='bg-white bg-opacity-50 dark:bg-hexo-black-gray pt-1 py-2 lg:hidden '>
+                <div className='bg-transparent dark:bg-hexo-black-gray pt-1 py-2 lg:hidden '>
                     <MenuBarMobile {...props} onHeightChange={(param) => collapseRef.current?.updateCollapseHeight(param)} />
                 </div>
             </Collapse>
