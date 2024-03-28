@@ -57,7 +57,7 @@ const SearchInput = ({ currentTag, currentSearch, cRef, className }) => {
     lock = false
   }
 
-  return <div className={'flex w-full bg-gray-100 ' + className}>
+  return <div className={'flex w-full bg-transparent ' + className}>
     <input
       ref={searchInputRef}
       type='text'
