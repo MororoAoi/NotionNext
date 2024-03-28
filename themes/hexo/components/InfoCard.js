@@ -25,11 +25,11 @@ export function InfoCard(props) {
                 <LazyImage src={siteInfo?.icon} className='rounded-full' width={120} alt={siteConfig('AUTHOR')} />
             </div>
             <div className='font-medium text-center text-xl pb-4'>{siteConfig('AUTHOR')}</div>
-             <div className='text-sm pl-4' style={{ textAlign: 'left', whiteSpace: 'pre-line' }}>
+             <div className='text-sm pl-6' style={{ textAlign: 'left', whiteSpace: 'pre-line' }}>
                 👩‍🔬 日本某国立大学助理教授<br/>
                 🥗 NASM运动营养教练<br/>
                 🏋️‍♀️ 健身摸鱼爱好者<br/>
-                🍓 喜欢草莓和吐司痛恨哑铃飞鸟
+                🍓 喜欢草莓和吐司，痛恨哑铃飞鸟
              </div>
 
             <MenuGroupCard {...props} />
