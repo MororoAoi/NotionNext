@@ -72,7 +72,7 @@ const LayoutBase = props => {
                         {/* 顶部导航栏 */}
                         <TopNavBar {...props} />
 
-                        <div id='container-inner' className={`px-14 ${fullWidth ? '' : 'max-w-5xl'} justify-center mx-auto min-h-screen`}>
+                        <div id='container-inner' className={`px-8 ${fullWidth ? '' : 'max-w-5xl'} justify-center mx-auto min-h-screen`}>
                             <Transition
                                 show={!onLoading}
                                 appear={true}
