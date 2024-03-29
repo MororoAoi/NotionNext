@@ -139,7 +139,7 @@ document.addEventListener('click', function (event) {
             // 添加 button 事件监听器
             var btn = document.querySelector("button.button-load");
             btn.addEventListener("click", function () {
-                btn.textContent = '努力加载中……';
+                btn.textContent = '再刷新一次QAQ…';
                 updateHTMl(nextDom)
                 if (nextLength < limit) { // 返回数据条数小于限制条数，隐藏
                     document.querySelector("button.button-load").remove()
