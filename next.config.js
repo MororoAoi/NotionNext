@@ -25,6 +25,7 @@ module.exports = withBundleAnalyzer({
   eslint: {
     ignoreDuringBuilds: true
   },
+  staticPageGenerationTimeout: 180,
   images: {
     formats: ['image/avif', 'image/webp'],
     domains: [
