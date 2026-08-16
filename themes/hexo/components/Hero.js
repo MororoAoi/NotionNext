@@ -53,7 +53,7 @@ const Hero = props => {
   return (
         <header
             id="header" style={{ zIndex: 1 }}
-            className="w-full h-screen relative bg-black"
+            className="w-full relative bg-black z-1 h-[50vh] min-h-[25rem] min-w-[25rem] flex flex-col justify-center items-center"
         >
 
             <div className="text-white absolute bottom-0 flex flex-col h-full items-center justify-center w-full ">
@@ -74,6 +74,7 @@ const Hero = props => {
                 </div>
             </div>
 
+              
             <LazyImage id='header-cover' src={siteInfo?.pageCover}
                 className={`header-cover w-full h-screen object-cover object-center ${siteConfig('HEXO_HOME_NAV_BACKGROUND_IMG_FIXED', null, CONFIG) ? 'fixed' : ''}`} />
 
